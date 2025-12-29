@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radha Krishn</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(253, 251, 253);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 70px;
+    }
+
+    nav {
+      width: 100%;
+      position: fixed;
+      background-color: rgb(129, 32, 203);
+      box-shadow: 5px 5px 30px rgba(3, 39, 59, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo {
+      width: 60px;
+      margin: 2vh;
+      margin-left: 8%;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+    }
+
+    .navbar {
+      display: flex;
+      margin-right: 4vh;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: ease 0.40s;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: rgb(230, 221, 232);
+      color: rgb(53, 4, 56);
+      box-shadow: 5px 10px 30px rgba(113, 15, 116, 0.2);
+      border-radius: 5px;
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 17px;
+    }
+
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 60px;
+    }
+
+    .art-card {
+      background: rgb(238, 213, 241);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      margin: 25px;
+      width: 400px;
+      height: 550px;
+
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .art-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .art-details {
+      padding: 1.5rem;
+    }
+
+    .art-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    .art-artist {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-specs {
+      font-size: 0.875rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-price {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #222;
+      margin-top: 1rem;
+    }
+
+    button {
+      color: rgb(8, 0, 7);
+      text-decoration: none;
+      font-size: 17px;
+      border: none;
+      background: none;
+      font-weight: 400;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      margin-top: 0.3rem;
+    }
+
+    button::before {
+      margin-left: auto;
+    }
+
+
+    .btn a {
+      padding: 2px 15px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    button:hover::after,
+    button:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  </section>
+  <div class="content" id="home">
+    <nav>
+      <img src="logo.png" height="80px" width="200px">
+
+      <ul class="navbar">
+        <li>
+          <a href="demo.html">Home</a>
+          <a href="sculptures.html">Sculptures</a>
+          <a href="artist.html">Artist</a>
+          <a href="about us.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="gallery-grid">
+    <div class="art-card">
+      <img
+        src="https://www.tallengestore.com/cdn/shop/products/Indian_Art_-_Radha_Krishna_Painting_2_192e096c-35c3-462b-8a00-dee023d981e0.jpg?v=1568961402"
+        alt="Radha Krishn 1" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">18 x 14 inches</p>
+        <p class="art-price">₹3,276</p>
+        <button class="btn"><a href="p6.1.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rukminim2.flixcart.com/image/850/1000/kr83ukw0/poster/x/9/p/large-wall-poster-of-radha-krishna-on-boat-oil-painting-poster-original-imag522amr43hgwt.jpeg?q=20&crop=false"
+        alt="Radha Krishn 2" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">12 x 18 inches</p>
+        <p class="art-price">₹199</p>
+        <button class="btn"><a href="p6.2.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://www.artzolo.com/cdn/shop/files/Radha-Krishna-1-ArtZolo-com-1412.jpg?v=1706712164"
+        alt="Radha Krishn 3" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">36 x 30 inches</p>
+        <p class="art-price">₹1,15,832</p>
+        <button class="btn"><a href="p6.3.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://i.pinimg.com/736x/30/7d/c0/307dc0e174517c5514c492bb1e35b12b.jpg" alt="Radha Krishn 4"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs"> 56 x 89 Centimeters</p>
+        <p class="art-price">₹4999</p>
+        <button class="btn"><a href="p6.4.html">Click me</a>
+      </div>
+    </div>
+
+
+    <div class="art-card">
+      <img src="https://cdn.exoticindia.com/images/products/original/paintings-2019/ddh556.jpg" alt="Radha Krishn 5"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">61 cm Height X 45.5 cm Width</p>
+        <p class="art-price">₹17,024</p>
+        <button class="btn"><a href="p6.5.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://www.tallengestore.com/cdn/shop/products/Indian_Art_-_Acrylic_Painting_-_Radha_Krishna.jpg?v=1568834109"
+        alt="Radha Krishn 6" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">12x12 inches</p>
+        <p class="art-price">₹1,073</p>
+        <button class="btn"><a href="p6.6.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://images.saatchiart.com/saatchi/1340813/art/8585611/7649386-HSC00923-7.jpg" alt="Radha Krishn 7"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Acrylic on paper</p>
+        <p class="art-specs">55.9 W x 55.9 H x 0.3 D cm</p>
+        <p class="art-price">₹5999</p>
+        <button class="btn"><a href="p6.7.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/71t4yXw2TLL._AC_UF1000,1000_QL80_.jpg" alt="Radha Krishn 8"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">36L x 36W Centimeters</p>
+        <p class="art-price">₹298</p>
+        <button class="btn"><a href="p6.8.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://soularts.com.au/cdn/shop/files/Radha_Krishna_Painting.jpg?v=1734159644" alt="Radha Krishn 9"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">50 x 60 inches</p>
+        <p class="art-price">₹37,700</p>
+        <button class="btn"><a href="p6.9.html">Click me</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

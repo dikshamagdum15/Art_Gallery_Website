@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landscape</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(238, 213, 241);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 70px;
+    }
+
+    nav {
+      width: 100%;
+      position: fixed;
+      background-color: rgb(129, 32, 203);
+      box-shadow: 5px 5px 30px rgba(3, 39, 59, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo {
+      width: 60px;
+      margin: 2vh;
+      margin-left: 8%;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+    }
+
+    .navbar {
+      display: flex;
+      margin-right: 4vh;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: ease 0.40s;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: rgb(230, 221, 232);
+      color: rgb(53, 4, 56);
+      box-shadow: 5px 10px 30px rgba(113, 15, 116, 0.2);
+      border-radius: 5px;
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 17px;
+    }
+
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 60px;
+    }
+
+    .art-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      margin: 25px;
+      width: 400px;
+      height: 550px;
+
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .art-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .art-details {
+      padding: 1.5rem;
+    }
+
+    .art-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    .art-artist {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-specs {
+      font-size: 0.875rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-price {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #222;
+      margin-top: 1rem;
+    }
+
+    button {
+      color: rgb(8, 0, 7);
+      text-decoration: none;
+      font-size: 17px;
+      border: none;
+      background: none;
+      font-weight: 400;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      margin-top: 0.3rem;
+    }
+
+    button::before {
+      margin-left: auto;
+    }
+
+
+    .btn a {
+      padding: 2px 15px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    button:hover::after,
+    button:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  </section>
+  <div class="content" id="home">
+    <nav>
+      <img src="logo.png" height="80px" width="200px">
+
+      <ul class="navbar">
+        <li>
+          <a href="demo.html">Home</a>
+          <a href="sculptures.html">Sculptures</a>
+          <a href="artist.html">Artist</a>
+          <a href="about us.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="gallery-grid">
+    <div class="art-card">
+      <img
+        src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/j/p/q/medium-painting-greenry-area-hd-wallpaper-on-art-paper-original-imah3a8znhmabuw4.jpeg?q=20&crop=false"
+        alt="Landscape 1" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Landscape</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">13 x 19 inches</p>
+        <p class="art-price">₹999</p>
+        <button class="btn"><a href="p5.1.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://img.freepik.com/free-vector/watercolor-autumn-landscape_52683-77214.jpg" alt="Landscape 2"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Landscape</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">13x20 inches</p>
+        <p class="art-price">₹6,000</p>
+        <button class="btn"><a href="p5.2.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/800w/products/132362/299346/handmade%2Fdownscaled%2Fh_5owh2c1j664_2000x2000__14771.1733987184.jpg?c=2"
+        alt="Landscape 3" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Nature</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">36 x 30 inches</p>
+        <p class="art-price">₹15,832</p>
+        <button class="btn"><a href="p5.3.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/71N9bGfQSfL._SX522_.jpg" alt="Landscape 4" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Landscape</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs"> 56 x 89 Centimeters</p>
+        <p class="art-price">₹999</p>
+        <button class="btn"><a href="p5.4.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/41eTnwPyTJL._SX300_SY300_QL70_FMwebp_.jpg" alt="Landscape 5"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Landscape</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">91.4 x 61 Centimeters</p>
+        <p class="art-price">₹1,291</p>
+        <button class="btn"><a href="p5.5.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/41kya3iwkxL._SX300_SY300_QL70_FMwebp_.jpg" alt="Landscape 6"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Landscape</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">91.4 x 61 Centimeters</p>
+        <p class="art-price">₹1,291</p>
+        <button class="btn"><a href="p5.6.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://i.etsystatic.com/22448967/r/il/3ef2b6/3250998360/il_1588xN.3250998360_7v7l.jpg"
+        alt="Landscape 7" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Nature</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">24 x 36 inches</p>
+        <p class="art-price">₹13,460</p>
+        <button class="btn"><a href="p5.7.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://images.saatchiart.com/saatchi/1540821/art/7504133/6573001-HSC00002-7.jpg" alt=" Landscape 8"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Nature</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">39.9 W x 30 H cm</p>
+        <p class="art-price">₹35,000</p>
+        <button class="btn"><a href="p5.8.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0625/3818/6989/files/1_07e7770a-7a1a-4dfe-83be-b502b2d47d57.jpg?v=1677310581"
+        alt="Landscape 9" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Landscape Nature</h2>
+        <p class="art-specs">Natural colours on paper</p>
+        <p class="art-specs">36x30 inches</p>
+        <p class="art-price">₹999</p>
+        <button class="btn"><a href="p5.9.html">Click me</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

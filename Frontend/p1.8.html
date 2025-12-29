@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banaras 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*header*/
+        .content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 70px;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            background-color: rgb(129, 32, 203);
+            box-shadow: 5px 5px 30px rgba(3, 39, 59, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            width: 60px;
+            margin: 2vh;
+            margin-left: 8%;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .navbar {
+            display: flex;
+            margin-right: 4vh;
+        }
+
+        .navbar a {
+            color: white;
+            font-size: 18px;
+            padding: 10px 22px;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: ease 0.40s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background: rgb(230, 221, 232);
+            color: rgb(53, 4, 56);
+            box-shadow: 5px 10px 30px rgba(113, 15, 116, 0.2);
+            border-radius: 5px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+        }
+
+
+        /* Product Section */
+        .product-container {
+            display: flex;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .product-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .product-image img {
+            max-width: 600px;
+            height: 600px;
+            border: 1px solid #eee;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .info-label {
+            width: 100px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .info-value {
+            color: #777;
+            margin-left: 10px;
+        }
+
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px 0 40px;
+        }
+
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .buy-now {
+            padding: 15px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .buy-now a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content" id="home">
+        <nav>
+            <img src="logo.png" height="80px" width="200px">
+
+            <ul class="navbar">
+                <li>
+                    <a href="demo.html">Home</a>
+                    <a href="sculptures.html">Sculptures</a>
+                    <a href="artist.html">Artist</a>
+                    <a href="about us.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="product-container">
+        <div class="product-image">
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/varanasi-ghat-ii-ananta-mandal.jpg"
+                alt="banaras 8">
+        </div>
+
+        <div class="product-details">
+            <h1 class="product-title">VARANASI GHAT</h1>
+
+            <div class="product-info">
+                <div class="info-row">
+                    <div class="info-label">Artist</div>
+                    <div class="info-value">Arpan Bhowmik</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Size</div>
+                    <div class="info-value">30 x 22 inches</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Medium</div>
+                    <div class="info-value">Acrylic on canvas</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Delivery time</div>
+                    <div class="info-value"> 6-7 business days</div>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-label">Art Code</div>
+                    <div class="info-value">DTY983</div>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Description</div>
+                <div class="info-value">This watercolor painting vividly captures the essence of Varanasi's ghats along
+                    the sacred Ganges River. The warm golden hues blend beautifully with the misty atmosphere, creating
+                    a sense of divine tranquility. Boats with red flags float gently on the water, while historic
+                    temples and steps adorned with devotees reflect the city's deep spiritual and cultural heritage.
+                </div>
+            </div>
+            <div class="product-price">₹ 68,000</div>
+
+
+            <div class="action-buttons">
+                <button class="buy-now"><a href="payment.html">Buy Now</a></button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

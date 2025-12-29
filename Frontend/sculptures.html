@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sculptures</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(238, 213, 241);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 70px;
+    }
+
+    nav {
+      width: 100%;
+      position: fixed;
+      background-color: rgb(129, 32, 203);
+      box-shadow: 5px 5px 30px rgba(3, 39, 59, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo {
+      width: 60px;
+      margin: 2vh;
+      margin-left: 8%;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+    }
+
+    .navbar {
+      display: flex;
+      margin-right: 4vh;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: ease 0.40s;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: rgb(230, 221, 232);
+      color: rgb(53, 4, 56);
+      box-shadow: 5px 10px 30px rgba(113, 15, 116, 0.2);
+      border-radius: 5px;
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 17px;
+    }
+
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 60px;
+    }
+
+    .art-card {
+      background: rgb(235, 230, 235);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      margin: 25px;
+      width: 400px;
+      height: 550px;
+
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .art-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .art-details {
+      padding: 1.5rem;
+    }
+
+    .art-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    .art-artist {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-specs {
+      font-size: 0.875rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-price {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #222;
+      margin-top: 1rem;
+    }
+
+    button {
+      color: rgb(8, 0, 7);
+      text-decoration: none;
+      font-size: 17px;
+      border: none;
+      background: none;
+      font-weight: 400;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      margin-top: 0.3rem;
+    }
+
+    button::before {
+      margin-left: auto;
+    }
+
+
+    .btn a {
+      padding: 2px 15px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    button:hover::after,
+    button:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  </section>
+  <div class="content" id="home">
+    <nav>
+      <img src="logo.png" height="80px" width="200px">
+
+      <ul class="navbar">
+        <li>
+          <a href="demo.html">Home</a>
+          <a href="sculptures.html">Sculptures</a>
+          <a href="artist.html">Artist</a>
+          <a href="about us.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="gallery-grid">
+    <div class="art-card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2021/1/AN/VP/DB/33640802/navgrah-statue-500x500-1000x1000.jpg"
+        alt="Sculptures 1" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Black marble modern art</h2>
+        <p class="art-specs">Marble</p>
+        <p class="art-specs">13 x 8 x 8 inches</p>
+        <p class="art-price">₹8,000</p>
+        <button class="btn"><a href="s1.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://cpimg.tistatic.com/07545107/b/4/Modern-Lady-Art-Sculpture.jpg" alt="Sculptures 2"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Modern Lady Art Sculpture</h2>
+        <p class="art-specs">Fiber</p>
+        <p class="art-specs"> 6 inches</p>
+        <p class="art-price">₹8950</p>
+        <button class="btn"><a href="s2.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://cpimg.tistatic.com/07545110/b/4/Modern-Art-Sculpture.jpg" alt="Sculptures 3" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Modern Art Sculpture</h2>
+        <p class="art-specs">Fiber</p>
+        <p class="art-specs">7 inches</p>
+        <p class="art-price">₹17,024</p>
+        <button class="btn"><a href="s3.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://i.pinimg.com/736x/d8/4e/fa/d84efaff3a40ee36791ce890872c4a8b.jpg" alt="Sculptures 4"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Lord Shiva Statue</h2>
+        <p class="art-specs">Polyresin</p>
+        <p class="art-specs">6 CM x 3.5 CM x 8 CM</p>
+        <p class="art-price">₹5,073</p>
+        <button class="btn"><a href="s4.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/51YzeqMNEhL._SX300_SY300_QL70_FMwebp_.jpg" alt="Sculptures 5"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Radha Krishna</h2>
+        <p class="art-specs">Brass</p>
+        <p class="art-specs">3 inches</p>
+        <p class="art-price">₹690</p>
+        <button class="btn"><a href="s5.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rukminim2.flixcart.com/image/850/1000/l4bn5ow0/showpiece-figurine/y/n/t/30-25-vitthal-rukmini-statue-big-size-handicraft-idol-for-temple-original-imagf8rqzedwyxxh.jpeg?q=90&crop=false"
+        alt="Sculptures 6" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Vitthal Rukmini Statue</h2>
+        <p class="art-specs">Marble</p>
+        <p class="art-specs">25 cm x 53 cm x 30 cm</p>
+        <p class="art-price">₹750</p>
+        <button class="btn"><a href="s6.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://arts.mojarto.com/productImages/MA345797/primary/282/MA345797.jpeg" alt="Sculptures 7"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Stag </h2>
+        <p class="art-specs">Bronze on Bronze</p>
+        <p class="art-specs">20.3 W x 27.9 H x 9.1 D cm</p>
+        <p class="art-price">₹800</p>
+        <button class="btn"><a href="s7.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/81fNHsjWQRL._SX679_.jpg" alt="Sculptures 8" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha Statue</h2>
+        <p class="art-specs">Fibreglass</p>
+        <p class="art-specs">24 inches</p>
+        <p class="art-price">₹6,499</p>
+        <button class="btn"><a href="s8.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://www.spruhacreation.in/wp-content/uploads/2024/03/SC00003-S-10-Black-400x400.jpg.webp"
+        alt="Sculptures 9" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Chatrapati Shivaji Maharaj</h2>
+        <p class="art-specs">Fiber (Polyresin)</p>
+        <p class="art-specs">10 inches</p>
+        <p class="art-price">₹2,500</p>
+        <button class="btn"><a href="s9.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://www.spruhacreation.in/wp-content/uploads/2024/03/SC00007-SD-9-Black.jpg.webp"
+        alt="Sculptures 10" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Ram Hanuman</h2>
+        <p class="art-specs">Fiber (Polyresin)</p>
+        <p class="art-specs">9 inches</p>
+        <p class="art-price">₹1,800</p>
+        <button class="btn"><a href="s10.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://craftearth.co/wp-content/uploads/2020/10/craftearth-black-metal-swami-vivekanand-statue-big-2-min.jpg"
+        alt="Sculptures 11" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Swami Vivekananda</h2>
+        <p class="art-specs">Metal</p>
+        <p class="art-specs">27 × 7 × 51 cm</p>
+        <p class="art-price">₹1250</p>
+        <button class="btn"><a href="s11.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://www.spruhacreation.in/wp-content/uploads/2024/03/SC00002-S-9-Copper-2.jpg" alt="Sculptures 12"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Chatrapati Shivaji Maharaj </h2>
+        <p class="art-specs">Fiber (Polyresin)</p>
+        <p class="art-specs">9 Inches</p>
+        <p class="art-price">₹1,799</p>
+        <button class="btn"><a href="s12.html">Click me</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

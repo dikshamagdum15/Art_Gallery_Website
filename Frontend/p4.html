@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black And White</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(238, 213, 241);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 70px;
+    }
+
+    nav {
+      width: 100%;
+      position: fixed;
+      background-color: rgb(129, 32, 203);
+      box-shadow: 5px 5px 30px rgba(3, 39, 59, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo {
+      width: 60px;
+      margin: 2vh;
+      margin-left: 8%;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+    }
+
+    .navbar {
+      display: flex;
+      margin-right: 4vh;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: ease 0.40s;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: rgb(230, 221, 232);
+      color: rgb(53, 4, 56);
+      box-shadow: 5px 10px 30px rgba(113, 15, 116, 0.2);
+      border-radius: 5px;
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 17px;
+    }
+
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 60px;
+    }
+
+    .art-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      margin: 25px;
+      width: 400px;
+      height: 550px;
+
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .art-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .art-details {
+      padding: 1.5rem;
+    }
+
+    .art-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    .art-artist {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-specs {
+      font-size: 0.875rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-price {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #222;
+      margin-top: 1rem;
+    }
+
+    button {
+      color: rgb(8, 0, 7);
+      text-decoration: none;
+      font-size: 17px;
+      border: none;
+      background: none;
+      font-weight: 400;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      margin-top: 0.3rem;
+    }
+
+    button::before {
+      margin-left: auto;
+    }
+
+
+    .btn a {
+      padding: 2px 15px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    button:hover::after,
+    button:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  </section>
+  <div class="content" id="home">
+    <nav>
+      <img src="logo.png" height="80px" width="200px">
+
+      <ul class="navbar">
+        <li>
+          <a href="demo.html">Home</a>
+          <a href="sculptures.html">Sculptures</a>
+          <a href="artist.html">Artist</a>
+          <a href="about us.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="gallery-grid">
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2017/09/Dilip-Chaudhury-48-x-60-inches-Acrylic-on-canvas-600x503-1.jpg"
+        alt="Black And White 1" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Varanasi Ghat</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">48 x 60 inches</p>
+        <p class="art-price">₹320,000</p>
+        <button class="btn"><a href="p4.1.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/71-gyLZNRFL._AC_UF894,1000_QL80_.jpg" alt="Black And White 2"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Street Artwork</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">20x28 inches</p>
+        <p class="art-price">₹70,000</p>
+        <button class="btn"><a href="p4.2.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/647/6519/28Landscape43__25396__48962.1506573876.jpg?c=2"
+        alt="Black And White 3" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Venice Black And White</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">40 x 30 inches</p>
+        <p class="art-price">₹16,300</p>
+        <button class="btn"><a href="p4.3.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://wallpapers.com/images/hd/black-and-white-art-bridge-w7p2ujc8xq1shyys.jpg"
+        alt="Black And White 4" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Bridge Art</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">40 x 50 inches</p>
+        <p class="art-price">₹47,499</p>
+        <button class="btn"><a href="p4.4.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://images-cdn.ubuy.co.in/633ebf69d9c64a33677c8a65-hand-painted-oil-painting-black-and.jpg"
+        alt="Black And White 5" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Red Tree Landscape</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">20 x 10 inches</p>
+        <p class="art-price">₹4190</p>
+        <button class="btn"><a href="p4.5.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://www.toperfect.com/pic/Oil%20Painting%20Styles%20on%20Canvas/Black%20and%20White/1-black-and-white-Paris-eiffel-black-and-white.jpg"
+        alt="Black And White 6" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Paris Eiffel Tower</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">8 x 10 inches</p>
+        <p class="art-price">₹9550</p>
+        <button class="btn"><a href="p4.6.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2022/07/Ashif-Hossain-12-x-12-inches-Acrylic-on-canvas-Bandra-Station-600x588-1.jpg"
+        alt="Black And White 7" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Bandra Station</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">12 x 12 inches</p>
+        <p class="art-price">₹40,000</p>
+        <button class="btn"><a href="p4.7.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://m.media-amazon.com/images/I/91sl5pYu+yL._AC_UF894,1000_QL80_.jpg" alt="Black And White 8"
+        class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Lion Painting</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">81.3 x 50.8 cm</p>
+        <p class="art-price">₹50,000</p>
+        <button class="btn"><a href="p4.8.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk3SYLKXmAiUlLKql7_FWainQ4g2Kn20mpjA&s"
+        alt="Black And White 9" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Paris Eiffel Tower </h2>
+        <p class="art-specs">Natural colours on paper</p>
+        <p class="art-specs">91.4 x 61 Centimeters</p>
+        <p class="art-price">₹45,500</p>
+        <button class="btn"><a href="p4.9.html">Click me</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

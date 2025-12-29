@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*header*/
+        .content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 70px;
+        }
+
+        nav {
+            margin-right: 120px;
+            width: 100%;
+            position: fixed;
+            background-color: rgb(168, 72, 241);
+            box-shadow: 5px 5px 30px rgba(3, 39, 59, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            width: 60px;
+            margin: 2vh;
+            margin-left: 8%;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .navbar {
+            display: flex;
+            margin-right: 4vh;
+        }
+
+        .navbar a {
+            color: white;
+            font-size: 18px;
+            padding: 10px 22px;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: ease 0.40s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background: rgb(230, 221, 232);
+            color: rgb(53, 4, 56);
+            box-shadow: 5px 10px 30px rgba(113, 15, 116, 0.2);
+            border-radius: 5px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+            margin: 0 70px;
+        }
+
+        .about-header {
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            font-weight: normal;
+            border-bottom: 1px solid #c73;
+            padding-bottom: 10px;
+            display: inline-block;
+            margin-top: 70px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-content p {
+            margin-bottom: 20px;
+        }
+
+        .image-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .gallery-image {
+            width: 600px;
+            height: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            margin-top: 20px;
+            margin: 0 70px;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+            margin: 0 70px;
+        }
+
+        .contact-header {
+            margin-bottom: 10px;
+        }
+
+        .contact-form-map {
+            flex: 1.5;
+            min-width: 300px;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .info-section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            .image-content {
+                order: 1;
+            }
+
+            .text-content {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--header-->
+    <div class="content" id="home">
+        <nav>
+            <img src="logo.png" height="80px" width="200px">
+
+            <ul class="navbar">
+                <li>
+                    <a href="demo.html">Home</a>
+                    <a href="sculptures.html">Sculptures</a>
+                    <a href="artist.html">Artist</a>
+                    <a href="about us.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--about us-->
+        <div class="about-section">
+            <div class="about-header">
+                <h1>About Us</h1>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Our Story</h2>
+                    <p>Artiflexa was set up under the banner 'Painted Artiflexa Art Gallery' in 1987 and has since
+                        continued to promote and exhibit talented artists from all over India. With the intention of
+                        making 'Art Affordable for Everybody' and with the introduction of the new generation into the
+                        family business, the gallery chose to rebrand itself.</p>
+
+                    <p>Keeping in mind the growing young collector base as well as continuing relationships with all
+                        earlier art buyers, in 2017, Artiflexa was reborn with a vision to enrich artist's careers by
+                        showcasing their artworks both at the local and international levels.</p>
+
+                    <p>Buying art should be an experience and we understand that. Our aims to make this process as
+                        simple and fun as it can get. Through our knowledge and expertise we strive to guide our clients
+                        in the best way to find the perfect piece of art for their personal spaces. At Artiflexa you
+                        will find unique paintings of both young and mid-career artists along with works of senior
+                        artists as well.</p>
+
+                    <p>Our gallery is located on Linking Road, Khar (West), Mumbai wherein individuals, collectors and
+                        art enthusiasts can visit and explore the world of art.</p>
+                </div>
+
+                <div class="image-content">
+                    <img src="https://mydesignangel.in/cdn/shop/articles/exhibition_banner_1.jpg?v=1706516835"
+                        alt="Artiflexa Exterior" class="gallery-image">
+                </div>
+            </div>
+        </div>
+
+        <!--contact us-->
+        <div class="contact-section">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="contact-info">
+                    <div class="info-section">
+                        <h2>Artiflexa</h2>
+                        <div class="address-content">
+                            <div class="gallery-name">Address</div>
+                            <div class="address-line">3, Ramjanki</div>
+                            <div class="address-line">356, Linking Road</div>
+                            <div class="address-line">Khar (West)</div>
+                            <div class="address-line">Mumbai - 400052</div>
+                            <div class="hours-line">Monday to Saturday 10:30 am - 8:00 pm</div>
+                            <div class="hours-line">Sunday : By Appointment</div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Telephone</h2>
+                        <div class="telephone-content">
+                            <div>+91-22-35643527</div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Enquires</h2>
+                        <div class="enquires-content">
+                            <div><a href="mailto:info@artiflexaartgallery.com"
+                                    class="email-link">info@artiflexaartgallery.com</a></div>
+                            <div><a href="mailto:india@artiflexaartgallery.com"
+                                    class="email-link">india@artiflexaartgallery.com</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
+</body>
+
+</html>

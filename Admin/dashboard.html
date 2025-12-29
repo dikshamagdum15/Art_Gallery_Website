@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>Gallery Admin</h2>
+  <a class="active" href="dashboard.html">Dashboard</a>
+  <a href="gallery.html">Gallery</a>
+</div>
+
+<div class="main">
+  <h1>Dashboard</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Artworks</h3>
+      <p>24</p>
+    </div>
+    <div class="card">
+      <h3>Visitors</h3>
+      <p>320</p>
+    </div>
+  </div>
+
+  <div class="chart-box">
+    <canvas id="artChart"></canvas>
+  </div>
+</div>
+
+<script>
+new Chart(document.getElementById('artChart'), {
+  type: 'line',
+  data: {
+    labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+    datasets: [{
+      label: 'Gallery Visits',
+      data: [120, 190, 300, 250, 220, 320],
+      borderColor: '#A848F1',
+      backgroundColor: 'rgba(168,72,241,0.2)',
+      tension: 0.4,
+      fill: true
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { display: false }
+    }
+  }
+});
+</script>
+
+</body>
+</html>

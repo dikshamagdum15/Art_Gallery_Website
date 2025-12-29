@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buddha</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(238, 213, 241);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 70px;
+    }
+
+    nav {
+      width: 100%;
+      position: fixed;
+      background-color: rgb(129, 32, 203);
+      box-shadow: 5px 5px 30px rgba(3, 39, 59, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo {
+      width: 60px;
+      margin: 2vh;
+      margin-left: 8%;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+    }
+
+    .navbar {
+      display: flex;
+      margin-right: 4vh;
+    }
+
+    .navbar a {
+      color: white;
+      font-size: 18px;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: ease 0.40s;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background: rgb(230, 221, 232);
+      color: rgb(53, 4, 56);
+      box-shadow: 5px 10px 30px rgba(113, 15, 116, 0.2);
+      border-radius: 5px;
+
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 17px;
+    }
+
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      float: left;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 60px;
+    }
+
+    .art-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      margin: 25px;
+      width: 400px;
+      height: 550px;
+
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .art-image {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .art-details {
+      padding: 1.5rem;
+    }
+
+    .art-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    .art-artist {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-specs {
+      font-size: 0.875rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-price {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #222;
+      margin-top: 1rem;
+    }
+
+    button {
+      color: rgb(8, 0, 7);
+      text-decoration: none;
+      font-size: 17px;
+      border: none;
+      background: none;
+      font-weight: 400;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      margin-top: 0.3rem;
+    }
+
+    button::before {
+      margin-left: auto;
+    }
+
+
+    .btn a {
+      padding: 2px 15px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    button:hover::after,
+    button:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  </section>
+  <div class="content" id="home">
+    <nav>
+      <img src="logo.png" height="80px" width="200px">
+
+      <ul class="navbar">
+        <li>
+          <a href="demo.html">Home</a>
+          <a href="sculptures.html">Sculptures</a>
+          <a href="artist.html">Artist</a>
+          <a href="about us.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="gallery-grid">
+    <div class="art-card">
+      <img
+        src="https://5.imimg.com/data5/SELLER/Default/2023/2/GN/HB/OZ/9107407/frameless-beautiful-wall-painting-for-home-enlightening-gautam-buddha.jpg"
+        alt="Buddha 1" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha</h2>
+        <p class="art-specs">6mm (Saint Gobain) Toughened glass</p>
+        <p class="art-specs">24 x 28 inches</p>
+        <p class="art-price">₹27,383</p>
+        <button class="btn"><a href="p2.1.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2024/10/Madhumita-Bhattacharya-32-x-42-inches-Oil-on-canvas--600x459.jpeg"
+        alt="Buddha 2" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Nirvana</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">32 x 42 inches</p>
+        <p class="art-price">₹72,500</p>
+        <button class="btn"><a href="p2.2.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="https://rhythmartgallery.com/wp-content/uploads/2025/01/Jyoti-30-x-40-inches-Acrylic-on-canvas.jpeg"
+        alt="Buddha 3" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Inception</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">30 x 40 inches</p>
+        <p class="art-price">₹80,000</p>
+        <button class="btn"><a href="p2.3.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2021/09/Dnyaneshwar-Mane-42-x-60-inches-Oil-on-canvas-600x415-1.jpg"
+        alt="Buddha 4" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha Temple</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">42 x 60 inches</p>
+        <p class="art-price">₹27,499</p>
+        <button class="btn"><a href="p2.4.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2019/05/Madhumita-Bhattacharya-30-x-40-inches-Oil-on-canvas-600x441-1.jpg"
+        alt="Buddha 5" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha</h2>
+        <p class="art-specs">Oil on canvas</p>
+        <p class="art-specs">30 x 40 inches</p>
+        <p class="art-price">₹68,000</p>
+        <button class="btn"><a href="p2.5.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2022/02/Madhumita-Bhattacharya-24-x-24-inches-Rs..40000-1-595x600-1.jpg"
+        alt="Buddha 6" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">24 x 24 inches</p>
+        <p class="art-price">₹ 40,000</p>
+        <button class="btn"><a href="p2.6.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2018/06/Vinayak-Jagdale-23-x-23-inches-Acrylic-on-canvas-600x598-1.jpg"
+        alt="Buddha 7" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">23 x 23 inches</p>
+        <p class="art-price">₹10,000</p>
+        <button class="btn"><a href="p2.7.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2019/01/Paras-Buddha-30-x-30-inches-Acrylic-on-canvas-600x584-1.jpg"
+        alt="Buddha 8" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">30 x 30 inches</p>
+        <p class="art-price">₹28,000</p>
+        <button class="btn"><a href="p2.8.html">Click me</a>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img
+        src="https://rhythmartgallery.com/wp-content/uploads/2018/02/Vinayak-Jagdale-39.5-x-39.5-inches-Acrylic-on-canvas-600x576-1.jpg"
+        alt="Buddha 9" class="art-image">
+      <div class="art-details">
+        <h2 class="art-title">Buddha</h2>
+        <p class="art-specs">Acrylic on canvas</p>
+        <p class="art-specs">39.5 x 39.5 inches</p>
+        <p class="art-price">₹38,000</p>
+        <button class="btn"><a href="p2.9.html">Click me</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
